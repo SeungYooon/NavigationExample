@@ -2,46 +2,19 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nav_graph"
-    app:startDestination="@id/busan_screen">
+    app:startDestination="@+id/main_fragment">
 
     <fragment
-        android:id="@+id/busan_screen"
-        android:name="com.example.navigation.Busan"
-        android:label="Busan Screen"
-        tools:layout="@layout/fragment_busan" />
+        android:id="@+id/main_fragment"
+        android:name="com.example.navigation.MainFragment"
+        android:label="Main fragment"
+        tools:layout="@layout/fragment_main" >
+    </fragment>
 
     <fragment
-        android:id="@+id/seoul_screen"
-        android:name="com.example.navigation.Seoul"
-        android:label="Seoul Screen"
-        tools:layout="@layout/fragment_seoul" />
-
-    <fragment
-        android:id="@+id/daegu_screen"
-        android:name="com.example.navigation.Daegu"
-        android:label="Daegu Screen"
-        tools:layout="@layout/fragment_daegu" />
-    <action
-        android:id="@+id/action_global_seoul_screen"
-        app:destination="@id/seoul_screen"
-        app:enterAnim="@anim/slide_in_right"
-        app:exitAnim="@anim/slide_out_left"
-        app:popEnterAnim="@anim/slide_in_left"
-        app:popExitAnim="@anim/slide_out_right" />
-    <action
-        android:id="@+id/action_global_busan_screen"
-        app:destination="@id/busan_screen"
-        app:enterAnim="@anim/slide_in_right"
-        app:exitAnim="@anim/slide_out_left"
-        app:popEnterAnim="@anim/slide_in_left"
-        app:popExitAnim="@anim/slide_out_right" />
-    <action
-        android:id="@+id/action_global_daegu_screen"
-        app:destination="@id/daegu_screen"
-        app:enterAnim="@anim/slide_in_right"
-        app:exitAnim="@anim/slide_out_left"
-        app:popEnterAnim="@anim/slide_in_left"
-        app:popExitAnim="@anim/slide_out_right" />
+        android:id="@+id/seoncd_fragment"
+        android:name="com.example.navigation.SecondFragment"
+        android:label="Sub fragment"
+        tools:layout="@layout/fragment_second"/>
 
 </navigation>
